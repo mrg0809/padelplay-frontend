@@ -1,1 +1,0 @@
-import{s as e}from"./supabase.a7ca61c0.js";const s=async a=>{const{data:t,error:r}=await e.from("club_products").select("id, name, brand, category, price, modality").eq("club_id",a);if(r)throw Error(r.message);return t||[]};export{s as g};
