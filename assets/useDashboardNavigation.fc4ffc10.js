@@ -1,1 +1,0 @@
-import{F as r}from"./index.176a017b.js";import{u as e}from"./userStore.4625cf0e.js";function i(){const s=r(),o=e();return{goToDashboard:()=>{const a=o==null?void 0:o.userType;a==="player"?s.push("/dashboard/player"):a==="club"?s.push("/dashboard/club"):a==="admin"?s.push("/dashboard/admin"):s.back()}}}export{i as u};
