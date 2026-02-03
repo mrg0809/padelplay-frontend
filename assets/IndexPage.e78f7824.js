@@ -1,0 +1,1 @@
+import{o as t,a as s,B as a}from"./index.a0492954.js";const n={class:"flex items-center justify-center h-screen bg-blue-100"},c=Object.assign({name:"IndexPage"},{__name:"IndexPage",setup(o){return(l,e)=>(t(),s("div",n,[...e[0]||(e[0]=[a("h1",{class:"text-4xl font-bold text-blue-500"},"\xA1Bienvenido a PadelPlay!",-1)])]))}});export{c as default};
