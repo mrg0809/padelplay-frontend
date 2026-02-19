@@ -1,0 +1,22 @@
+import{s as o}from"./supabase.66aa98e2.js";const c=async(s,t)=>{const{data:r,error:e}=await o.from("reservations").select(`
+          id,
+          start_time,
+          end_time,
+          court_id,
+          player_id,
+          guest_name,
+          source,
+          total_price,
+          is_paid,
+          courts(name),
+          profiles(full_name),
+          payment_orders(total_amount, payment_status, club_commission, player_commission, additional_items),
+          matches(id)
+      `).eq("reservation_date",s).eq("courts.club_id",t);if(e)throw new Error(e.message);return r},_=async(s,t=null,r=null)=>{let e=o.from("reservations").select(`
+      id,
+      reservation_date,
+      start_time,
+      end_time,
+      courts(name, club_id),
+      matches(event_type, gender, category)
+    `).eq("courts.club_id",s).eq("status","active");t&&r?e=e.gte("reservation_date",t).lte("reservation_date",r):t&&(e=e.gte("reservation_date",t));const{data:i,error:a}=await e;if(a)throw new Error(a.message);return i};export{c as f,_ as g};

@@ -1,0 +1,1 @@
+import{b as r,q as a,s}from"./index.687b44e8.js";import{h as t}from"./haptics.57409bd0.js";var g=r(({app:o})=>{o.config.globalProperties.$haptics=t,o.config.globalProperties.$keyboard=a,o.config.globalProperties.$storage=s});export{g as default};
