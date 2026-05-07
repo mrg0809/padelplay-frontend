@@ -1,0 +1,1 @@
+function p(a,d){const s=d==null?void 0:d.userType;if(!s){a.push("/");return}s==="player"?a.push("/dashboard/player"):s==="club"?a.push("/dashboard/club"):s==="admin"?a.push("/dashboard/admin"):a.back()}export{p as n};

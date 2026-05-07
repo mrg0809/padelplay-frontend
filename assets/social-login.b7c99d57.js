@@ -1,0 +1,1 @@
+import{i as o}from"./socialLoginAuth.a57d02fe.js";import"./index.15c5059a.js";var n=async()=>{try{await o(),console.log("Social Login plugin initialized")}catch(i){console.error("Social Login plugin init failed:",i)}};export{n as default};
